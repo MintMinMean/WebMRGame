@@ -28,12 +28,12 @@
       <!-- <a-entity id="rightHand" hand-tracking-grab-controls="hand: right"></a-entity>
       <a-entity id="leftHand" hand-tracking-grab-controls="hand: left"></a-entity> -->
     <!-- <a-scene> -->
-      <a-entity position="0 5 0">
-        <a-box id="Wall" static-body height="10" depth="0.2" width="10" position="5 0 0" rotation="0 90 0" color="#4CC3D9" opacity = "1" color-toggle></a-box>
+      <a-entity position="0 0 0">
+        <!-- <a-box id="Wall" static-body height="10" depth="0.2" width="10" position="5 0 0" rotation="0 90 0" color="#4CC3D9" opacity = "1" color-toggle></a-box>
         <a-box id="Wall" static-body height="10" depth="0.2" width="10" position="-5 0 0" rotation="0 90 0" color="#4CC3D9" opacity = "1" color-toggle></a-box>
         <a-box id="Wall" static-body height="10" depth="0.2" width="10" position="0 0 5" rotation="0 0 0" color="#4CC3D9" opacity = "1" color-toggle></a-box>
-        <a-box id="Wall" static-body height="10" depth="0.2" width="10" position="0 0 -5" rotation="0 0 0" color="#4CC3D9" opacity = "1" color-toggle></a-box>
-        <a-plane static-body position="0 -5 0" rotation="-90 0 0" width="10" height="10" color="#7BC8A4" ></a-plane>
+        <a-box id="Wall" static-body height="10" depth="0.2" width="10" position="0 0 -5" rotation="0 0 0" color="#4CC3D9" opacity = "1" color-toggle></a-box> -->
+        <a-plane static-body position="0 0 0" rotation="-90 0 0" width="5" height="5" color="#7BC8A4" ></a-plane>
       </a-entity>
       
       <a-box position="-1.5 0.5 -3" rotation="0 45 0" color="#4CC3D9" opacity = "0.5 " target-marker></a-box>
@@ -42,7 +42,7 @@
       <a-sphere collision-handler dynamic-body target-marker src="Screenshot_Yae.png" position="0 1.25 -2" radius=".5" animation="property: rotation; to: 0 360 0; easing: linear; dur: 10000; loop: true"></a-sphere>
       <a-cylinder mover position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       
-      <a-sky src="Screenshot_Yae.png"></a-sky>
+      <a-sky color="#000000" ></a-sky>
 
       <a-entity id="coordinate" position="-8 5 -8" target-marker>
         <a-cone name="x" height="1" radius-bottom="0.1" position="0.5 0 0" rotation="0 0 -90" color="#F54927"></a-cone>
@@ -52,6 +52,7 @@
         <a-text value="Y" position="-0.1 1.1 0"></a-text>
         <a-text value="Z" position="-0.1 0 1"></a-text>
       </a-entity>
+
       <a-entity id="impModel" position="0 5 -6">
         <a-gltf-model src="monkey.gltf" position="8 0 0" ></a-gltf-model>
       </a-entity>
