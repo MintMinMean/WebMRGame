@@ -14,6 +14,8 @@
     <script src="paper.js"></script>
     <script src="collision.js"></script>
 
+    <title>Real releases Project</title>
+
   </head>
   <body>
     <a-scene xr-mode-ui="enabled: true" cursor="rayOrigin: mouse" physics = "debug: true" embedded arjs>
@@ -63,6 +65,16 @@
         
       </a-entity>
 
+      <a-entity>
+            <!-- ระบุไทป์ AR -->
+            <a-marker preset="hiro">
+                <!-- ใส่ตำแหน่ง และโมเดลที่ต้องแสดงผล -->
+                <a-entity position="0 0 0" gltf-model="monkey.gltf">
+                </a-entity>
+            </a-marker>
+
+        </a-entity>
+
       <!-- <a-entity id="rig"> 
         <a-entity camera>
 
@@ -72,6 +84,7 @@
 
     </a-scene>
     <script src="InitialSetting.js"></script>
+    <script src="styles.css"></script>
     <script>
         Logposition("coordinate"); 
         logdata("Data is: "+g);
